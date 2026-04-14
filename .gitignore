@@ -3,4 +3,11 @@ venv/
 __pycache__/
 *.pyc
 .env
+.env.local
+.env.*.local
 node_modules/
+dist/
+server/data/users.json
+*.mp4
+*.avi
+*.mov

@@ -15,8 +15,16 @@ const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || 'evidencex_secret_key_2026';
 
 app.use(cors({
-  origin: ['https://evidence-jw0vggndb-kushal639s-projects.vercel.app', 'http://localhost:3000', 'http://localhost:5173'],
+  origin: [
+    'https://evidence-jw0vggndb-kushal639s-projects.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'http://localhost:4173',
+    'http://127.0.0.1:5173',
+    'http://127.0.0.1:4173',
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
 }));
 
 app.use(express.json());
