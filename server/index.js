@@ -14,17 +14,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || 'evidencex_secret_key_2026';
 
+// ✅ FIXED CORS (IMPORTANT)
 app.use(cors({
   origin: [
-    'https://evidence-jw0vggndb-kushal639s-projects.vercel.app',
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'http://localhost:4173',
-    'http://127.0.0.1:5173',
-    'http://127.0.0.1:4173',
+    "https://evidence-jw0vggndb-kushal639s-projects.vercel.app",
+    "http://localhost:5173"
   ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());
@@ -36,6 +34,9 @@ const dataDir = path.join(__dirname, 'data');
 if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
+// ------------------------
+// Helpers
+// ------------------------
 const readData = (file) => {
   const filePath = path.join(dataDir, file);
   if (!fs.existsSync(filePath)) return [];
@@ -46,15 +47,21 @@ const writeData = (file, data) => {
   fs.writeFileSync(path.join(dataDir, file), JSON.stringify(data, null, 2));
 };
 
+// ------------------------
+// Default Users
+// ------------------------
 if (!fs.existsSync(path.join(dataDir, 'users.json'))) {
   const salt = bcrypt.genSaltSync(10);
   writeData('users.json', [
-    { id: 'U001', email: 'admin@evidencex.com', password: bcrypt.hashSync('admin123', salt), name: 'Inspector Arjun Mehta', role: 'Senior Inspector', badge: 'IPS-4521' },
-    { id: 'U002', email: 'officer@evidencex.com', password: bcrypt.hashSync('officer123', salt), name: 'Sub-Inspector Priya Rao', role: 'Sub-Inspector', badge: 'SI-7834' },
-    { id: 'U003', email: 'demo@evidencex.com', password: bcrypt.hashSync('demo', salt), name: 'Demo User', role: 'Analyst', badge: 'AN-0001' }
+    { id: 'U001', email: '[admin@evidencex.com](mailto:admin@evidencex.com)', password: bcrypt.hashSync('admin123', salt), name: 'Inspector Arjun Mehta', role: 'Senior Inspector', badge: 'IPS-4521' },
+    { id: 'U002', email: '[officer@evidencex.com](mailto:officer@evidencex.com)', password: bcrypt.hashSync('officer123', salt), name: 'Sub-Inspector Priya Rao', role: 'Sub-Inspector', badge: 'SI-7834' },
+    { id: 'U003', email: '[demo@evidencex.com](mailto:demo@evidencex.com)', password: bcrypt.hashSync('demo', salt), name: 'Demo User', role: 'Analyst', badge: 'AN-0001' }
   ]);
 }
 
+// ------------------------
+// Multer Setup
+// ------------------------
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, uploadsDir),
   filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`)
@@ -62,10 +69,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage, limits: { fileSize: 500 * 1024 * 1024 } });
 
+// ------------------------
+// Routes
+// ------------------------
 app.get('/', (req, res) => {
   res.send('🚀 EvidenceX Backend is Running');
 });
 
+// ✅ LOGIN
 app.post('/api/login', (req, res) => {
   const { email, password } = req.body;
   const users = readData('users.json');
@@ -87,14 +98,15 @@ app.post('/api/login', (req, res) => {
   });
 });
 
+// ✅ REGISTER
 app.post('/api/register', (req, res) => {
   const { name, email, password } = req.body;
   const users = readData('users.json');
-  
+
   if (users.find(u => u.email === email)) {
     return res.status(400).json({ error: 'Email already exists' });
   }
-  
+
   const salt = bcrypt.genSaltSync(10);
   const newUser = {
     id: `U${Date.now()}`,
@@ -104,10 +116,10 @@ app.post('/api/register', (req, res) => {
     role: 'Officer',
     badge: `NEW-${Math.floor(Math.random() * 9000) + 1000}`
   };
-  
+
   users.push(newUser);
   writeData('users.json', users);
-  
+
   const token = jwt.sign(
     { id: newUser.id, email: newUser.email, role: newUser.role },
     JWT_SECRET,
@@ -120,6 +132,9 @@ app.post('/api/register', (req, res) => {
   });
 });
 
+// ------------------------
+// Other APIs
+// ------------------------
 app.post('/api/evidence/upload', upload.array('files', 10), (req, res) => {
   const evidence = readData('evidence.json');
 
@@ -190,6 +205,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// ------------------------
+// Helpers
+// ------------------------
 function getFileType(name) {
   const ext = name.split('.').pop().toLowerCase();
   if (['mp4', 'avi', 'mov', 'mkv'].includes(ext)) return 'video';
