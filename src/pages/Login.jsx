@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// deploy-sync: fixed email login UI
 import { useAuth } from '../context/AuthContext';
 import { useData } from '../context/DataContext';
 import { useNavigate } from 'react-router-dom';
