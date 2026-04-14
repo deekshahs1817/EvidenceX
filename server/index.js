@@ -19,11 +19,9 @@ app.use(cors({
   origin: [
     'https://deekshahs1817.github.io',
     'https://deekshahs1817.github.io/',
-    'http://localhost:3000',
+    'https://deekshahs1817.github.io/EvidenceX',
+    'https://deekshahs1817.github.io/EvidenceX/',
     'http://localhost:5173',
-    'http://localhost:4173',
-    'http://127.0.0.1:5173',
-    'http://127.0.0.1:4173',
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
