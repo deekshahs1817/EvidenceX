@@ -1,0 +1,72 @@
+[
+  {
+    "evidenceId": "E001",
+    "type": "video",
+    "riskScore": 82,
+    "riskLevel": "high",
+    "detections": [
+      {
+        "object": "Person",
+        "count": 3,
+        "confidence": 0.94,
+        "timestamps": [
+          "00:02:14",
+          "00:05:32",
+          "00:12:45"
+        ]
+      },
+      {
+        "object": "Car (Silver Sedan)",
+        "count": 1,
+        "confidence": 0.87,
+        "timestamps": [
+          "00:03:01"
+        ]
+      },
+      {
+        "object": "Bike (Black)",
+        "count": 2,
+        "confidence": 0.79,
+        "timestamps": [
+          "00:07:22",
+          "00:14:10"
+        ]
+      }
+    ],
+    "summary": "Multiple persons detected near restricted area. Suspicious bag identified at 00:05:35.",
+    "analyzedAt": "2026-04-05T15:00:00Z"
+  },
+  {
+    "evidenceId": "E002",
+    "type": "pdf",
+    "riskScore": 75,
+    "riskLevel": "high",
+    "entities": [
+      {
+        "type": "Person",
+        "values": [
+          "Rajesh Kumar",
+          "Vikram Patel",
+          "Mohammad Ali"
+        ]
+      },
+      {
+        "type": "Location",
+        "values": [
+          "Sector 15 Noida",
+          "Connaught Place",
+          "Chandni Chowk"
+        ]
+      },
+      {
+        "type": "Amount",
+        "values": [
+          "₹5,00,000",
+          "₹12,00,000"
+        ]
+      }
+    ],
+    "summary": "Multiple high-value transactions linked to known suspects.",
+    "analyzedAt": "2026-04-05T15:30:00Z"
+  }
+]

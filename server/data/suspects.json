@@ -1,0 +1,82 @@
+[
+  {
+    "id": "S001",
+    "name": "Rajesh Kumar",
+    "alias": "RK",
+    "age": 34,
+    "risk": "high",
+    "score": 85,
+    "phone": "+91-98765-43210",
+    "lastSeen": "Sector 15, Noida"
+  },
+  {
+    "id": "S002",
+    "name": "Amit Sharma",
+    "alias": "Amit",
+    "age": 29,
+    "risk": "medium",
+    "score": 52,
+    "phone": "+91-87654-32109",
+    "lastSeen": "Connaught Place, Delhi"
+  },
+  {
+    "id": "S003",
+    "name": "Priya Singh",
+    "alias": "PS",
+    "age": 27,
+    "risk": "low",
+    "score": 23,
+    "phone": "+91-76543-21098",
+    "lastSeen": "MG Road, Gurgaon"
+  },
+  {
+    "id": "S004",
+    "name": "Vikram Patel",
+    "alias": "VP",
+    "age": 41,
+    "risk": "high",
+    "score": 78,
+    "phone": "+91-65432-10987",
+    "lastSeen": "Lajpat Nagar, Delhi"
+  },
+  {
+    "id": "S005",
+    "name": "Deepak Verma",
+    "alias": "DV",
+    "age": 36,
+    "risk": "medium",
+    "score": 45,
+    "phone": "+91-54321-09876",
+    "lastSeen": "Nehru Place, Delhi"
+  },
+  {
+    "id": "S006",
+    "name": "Sunita Devi",
+    "alias": "SD",
+    "age": 31,
+    "risk": "low",
+    "score": 18,
+    "phone": "+91-43210-98765",
+    "lastSeen": "Dwarka, Delhi"
+  },
+  {
+    "id": "S007",
+    "name": "Mohammad Ali",
+    "alias": "MA",
+    "age": 38,
+    "risk": "high",
+    "score": 92,
+    "phone": "+91-32109-87654",
+    "lastSeen": "Old Delhi"
+  },
+  {
+    "id": "S008",
+    "name": "Neha Gupta",
+    "alias": "NG",
+    "age": 25,
+    "risk": "low",
+    "score": 12,
+    "phone": "+91-21098-76543",
+    "lastSeen": "Saket, Delhi"
+  }
+]

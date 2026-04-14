@@ -1,0 +1,67 @@
+[
+  {
+    "evidenceId": "E001",
+    "type": "video",
+    "detections": [
+      { "object": "Person", "count": 3, "confidence": 0.94, "timestamps": ["00:02:14", "00:05:32", "00:12:45"] },
+      { "object": "Car (Silver Sedan)", "count": 1, "confidence": 0.87, "timestamps": ["00:03:01"] },
+      { "object": "Bike (Black)", "count": 2, "confidence": 0.79, "timestamps": ["00:07:22", "00:14:10"] },
+      { "object": "Bag (Suspicious)", "count": 1, "confidence": 0.68, "timestamps": ["00:05:35"] }
+    ],
+    "riskLevel": "high",
+    "riskScore": 82,
+    "summary": "Multiple persons detected near restricted area. Suspicious bag identified at 00:05:35."
+  },
+  {
+    "evidenceId": "E002",
+    "type": "pdf",
+    "entities": [
+      { "type": "Person", "values": ["Rajesh Kumar", "Vikram Patel", "Mohammad Ali"] },
+      { "type": "Location", "values": ["Sector 15 Noida", "Connaught Place", "Chandni Chowk"] },
+      { "type": "Date", "values": ["March 15, 2026", "March 22, 2026", "April 1, 2026"] },
+      { "type": "Phone", "values": ["+91-98765-43210", "+91-65432-10987"] },
+      { "type": "Amount", "values": ["₹5,00,000", "₹12,00,000"] }
+    ],
+    "riskLevel": "high",
+    "riskScore": 75,
+    "summary": "Multiple high-value transactions linked to known suspects. Financial trail connects 3 individuals."
+  },
+  {
+    "evidenceId": "E003",
+    "type": "text",
+    "entities": [
+      { "type": "Person", "values": ["RK", "Amit", "VP"] },
+      { "type": "Location", "values": ["the usual place", "near metro station", "warehouse"] },
+      { "type": "Date", "values": ["tomorrow", "next Friday", "10th April"] },
+      { "type": "Code Words", "values": ["package", "delivery", "meeting"] }
+    ],
+    "riskLevel": "medium",
+    "riskScore": 58,
+    "summary": "Coded communication detected. References to meetings and deliveries at undisclosed locations."
+  },
+  {
+    "evidenceId": "E004",
+    "type": "image",
+    "detections": [
+      { "object": "Person (Male)", "count": 1, "confidence": 0.96 },
+      { "object": "Face Match: Rajesh Kumar", "count": 1, "confidence": 0.89 },
+      { "object": "Vehicle (Background)", "count": 1, "confidence": 0.72 }
+    ],
+    "riskLevel": "high",
+    "riskScore": 88,
+    "summary": "Positive face match with suspect Rajesh Kumar (89% confidence). Location matches known hangout."
+  },
+  {
+    "evidenceId": "E006",
+    "type": "pdf",
+    "entities": [
+      { "type": "Person", "values": ["Rajesh Kumar", "Deepak Verma"] },
+      { "type": "Account", "values": ["HDFC-XXXX4521", "SBI-XXXX7832"] },
+      { "type": "Amount", "values": ["₹2,50,000", "₹8,00,000", "₹15,00,000"] },
+      { "type": "Date", "values": ["Feb 10, 2026", "March 5, 2026"] }
+    ],
+    "riskLevel": "high",
+    "riskScore": 71,
+    "summary": "Large cash deposits found in accounts linked to suspects. Pattern consistent with money laundering."
+  }
+]

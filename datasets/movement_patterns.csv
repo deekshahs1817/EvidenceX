@@ -1,0 +1,7 @@
+suspect,pattern,location,visits,timeframe,times,severity,description
+Rajesh Kumar,repeated_visit,"Sector 15, Noida",12,30 days,"06:30|07:00|18:00|19:30",high,Regular morning and evening visits to warehouse area
+Rajesh Kumar,route_change,Various,,Last 7 days,,medium,Switched from usual Noida-Delhi route to a longer circuitous path via Ghaziabad
+Vikram Patel,repeated_visit,Chandni Chowk,8,14 days,"10:00|11:00|14:00",medium,Frequent midday visits to Chandni Chowk market area
+Mohammad Ali,sudden_movement,Old Delhi to Noida,,April 5,05:30,high,Unusual early morning movement from Old Delhi to Noida (outside normal pattern)
+Deepak Verma,repeated_visit,Nehru Place,15,30 days,"09:00|17:00",low,Regular workday pattern - likely workplace
+Rajesh Kumar,convergence,Chandni Chowk,3,7 days,10:30,high,Meeting point where multiple suspects converge simultaneously

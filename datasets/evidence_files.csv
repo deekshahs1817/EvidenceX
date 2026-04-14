@@ -1,0 +1,9 @@
+id,name,type,size,uploadTime,status,caseId
+E001,CCTV_Sector15_Cam3.mp4,video,245 MB,2026-04-05 14:30,analyzed,C001
+E002,Intercepted_Call_Log.pdf,pdf,2.1 MB,2026-04-05 15:12,analyzed,C001
+E003,WhatsApp_Chat_Export.txt,text,156 KB,2026-04-05 16:45,analyzed,C001
+E004,Suspect_Photo_RK.jpg,image,3.4 MB,2026-04-06 09:10,analyzed,C001
+E005,CCTV_CP_Entrance.mp4,video,512 MB,2026-04-06 10:22,pending,C001
+E006,Financial_Records.pdf,pdf,8.7 MB,2026-04-06 11:05,analyzed,C001
+E007,CDR_Data_March2026.csv,text,1.2 MB,2026-04-06 12:30,analyzed,C001
+E008,Location_Screenshot.png,image,890 KB,2026-04-06 13:15,pending,C001

@@ -1,0 +1,17 @@
+source,target,strength,calls,label
+Rajesh Kumar,Vikram Patel,strong,45,Frequent Calls
+Rajesh Kumar,Mohammad Ali,strong,38,Business Partner
+Rajesh Kumar,Amit Sharma,medium,15,Associate
+Rajesh Kumar,Deepak Verma,medium,12,Financial Link
+Vikram Patel,Mohammad Ali,strong,28,Co-conspirator
+Vikram Patel,Deepak Verma,weak,5,Occasional Contact
+Amit Sharma,Priya Singh,weak,3,Known Associate
+Mohammad Ali,Sunita Devi,weak,2,Peripheral
+Deepak Verma,Neha Gupta,weak,4,Family
+Rajesh Kumar,Sector 15 Noida,strong,,Primary Location
+Rajesh Kumar,Connaught Place,medium,,Frequent Visit
+Vikram Patel,Lajpat Nagar,strong,,Residence
+Mohammad Ali,Old Delhi,strong,,Base of Operations
+Mohammad Ali,Chandni Chowk,medium,,Regular Visit
+Deepak Verma,Nehru Place,strong,,Workplace
+Amit Sharma,Connaught Place,medium,,Meeting Point

@@ -1,0 +1,7 @@
+id,type,description,evidence,suspects,confidence,severity
+CL001,person-cctv-call,"Rajesh Kumar detected in CCTV at Sector 15 and found in call records with Vikram Patel","E001|E002","Rajesh Kumar|Vikram Patel",92,high
+CL002,person-financial-call,"Financial transfer linked to Rajesh Kumar matches timing of intercepted call","E006|E002","Rajesh Kumar|Deepak Verma",85,high
+CL003,location-cctv-cdr,"Chandni Chowk CCTV footage and CDR data confirm meeting of 3 suspects","E001|E007","Rajesh Kumar|Vikram Patel|Mohammad Ali",88,high
+CL004,chat-call-match,"WhatsApp chat mentions delivery tomorrow matching intercepted call content","E003|E002","Amit Sharma|Rajesh Kumar",74,medium
+CL005,person-photo-cctv,"Photo of Rajesh Kumar matches CCTV detection with 89% face recognition confidence","E004|E001","Rajesh Kumar",89,high
+CL006,movement-financial,"CDR movement pattern correlates with financial transaction timing","E007|E006","Deepak Verma",67,medium

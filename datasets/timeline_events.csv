@@ -1,0 +1,13 @@
+id,time,type,title,description,suspect,location,severity
+T001,2026-04-05 06:30,cctv,Person A detected at Sector 15 Gate,"CCTV Cam 3 detected person matching Rajesh Kumar entering Sector 15 complex.",Rajesh Kumar,"Sector 15, Noida",high
+T002,2026-04-05 07:15,call,Call between RK and VP,"Intercepted call (duration: 8 min 32 sec). Keywords: delivery, tomorrow, warehouse.",Rajesh Kumar,,high
+T003,2026-04-05 08:00,location,CDR ping at Tower T-1045,"Rajesh Kumar phone pinged tower near Connaught Place. Movement from Noida detected.",Rajesh Kumar,Connaught Place,medium
+T004,2026-04-05 08:45,cctv,Silver sedan spotted at CP,"Vehicle matching suspect profile detected at Connaught Place parking.",,Connaught Place,medium
+T005,2026-04-05 09:10,call,Call between MA and RK,"Short call (2 min 14 sec). Coded language used. Reference to the package.",Mohammad Ali,,high
+T006,2026-04-05 10:00,document,Financial transaction detected,"Rs 5,00,000 transferred from HDFC-XXXX4521 to unknown account. Flagged by AI.",Rajesh Kumar,,high
+T007,2026-04-05 10:30,location,Three phones converge,"CDR data shows RK, VP, and MA phones all within 500m radius at Chandni Chowk.",Multiple,Chandni Chowk,high
+T008,2026-04-05 11:15,cctv,Meeting captured on CCTV,"Three individuals matching suspect descriptions seen meeting near Chandni Chowk market.",Multiple,Chandni Chowk,high
+T009,2026-04-05 12:00,call,Call from VP to DV,"Post-meeting call. Duration: 5 min 18 sec. Mentions accounts and papers.",Vikram Patel,,medium
+T010,2026-04-05 13:30,location,Suspects disperse,"CDR shows rapid movement away from meeting point in different directions.",Multiple,Various,medium
+T011,2026-04-05 15:00,document,Chat log analyzed,"WhatsApp export reveals coded messages about package delivery schedule.",Amit Sharma,,medium
+T012,2026-04-05 18:00,cctv,Evening activity at warehouse,"Movement detected at Sector 15 warehouse. Vehicle loading activity observed.",Rajesh Kumar,"Sector 15, Noida",high

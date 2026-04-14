@@ -1,0 +1,82 @@
+[
+  {
+    "id": "E001",
+    "name": "CCTV_Sector15_Cam3.mp4",
+    "storedName": "seed_cctv1.mp4",
+    "type": "video",
+    "size": "245 MB",
+    "uploadTime": "2026-04-05T14:30:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E002",
+    "name": "Intercepted_Call_Log.pdf",
+    "storedName": "seed_call.pdf",
+    "type": "pdf",
+    "size": "2.1 MB",
+    "uploadTime": "2026-04-05T15:12:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E003",
+    "name": "WhatsApp_Chat_Export.txt",
+    "storedName": "seed_chat.txt",
+    "type": "text",
+    "size": "156 KB",
+    "uploadTime": "2026-04-05T16:45:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E004",
+    "name": "Suspect_Photo_RK.jpg",
+    "storedName": "seed_photo.jpg",
+    "type": "image",
+    "size": "3.4 MB",
+    "uploadTime": "2026-04-06T09:10:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E005",
+    "name": "CCTV_CP_Entrance.mp4",
+    "storedName": "seed_cctv2.mp4",
+    "type": "video",
+    "size": "512 MB",
+    "uploadTime": "2026-04-06T10:22:00Z",
+    "status": "pending",
+    "caseId": "C001"
+  },
+  {
+    "id": "E006",
+    "name": "Financial_Records.pdf",
+    "storedName": "seed_finance.pdf",
+    "type": "pdf",
+    "size": "8.7 MB",
+    "uploadTime": "2026-04-06T11:05:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E007",
+    "name": "CDR_Data_March2026.csv",
+    "storedName": "seed_cdr.csv",
+    "type": "text",
+    "size": "1.2 MB",
+    "uploadTime": "2026-04-06T12:30:00Z",
+    "status": "analyzed",
+    "caseId": "C001"
+  },
+  {
+    "id": "E008",
+    "name": "Location_Screenshot.png",
+    "storedName": "seed_location.png",
+    "type": "image",
+    "size": "890 KB",
+    "uploadTime": "2026-04-06T13:15:00Z",
+    "status": "pending",
+    "caseId": "C001"
+  }
+]

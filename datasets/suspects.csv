@@ -1,0 +1,9 @@
+id,name,alias,age,risk,score,phone,lastSeen
+S001,Rajesh Kumar,RK,34,high,85,+91-98765-43210,"Sector 15, Noida"
+S002,Amit Sharma,Amit,29,medium,52,+91-87654-32109,"Connaught Place, Delhi"
+S003,Priya Singh,PS,27,low,23,+91-76543-21098,"MG Road, Gurgaon"
+S004,Vikram Patel,VP,41,high,78,+91-65432-10987,"Lajpat Nagar, Delhi"
+S005,Deepak Verma,DV,36,medium,45,+91-54321-09876,"Nehru Place, Delhi"
+S006,Sunita Devi,SD,31,low,18,+91-43210-98765,"Dwarka, Delhi"
+S007,Mohammad Ali,MA,38,high,92,+91-32109-87654,Old Delhi
+S008,Neha Gupta,NG,25,low,12,+91-21098-76543,"Saket, Delhi"

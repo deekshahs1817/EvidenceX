@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "caller": "Rajesh Kumar",
+    "receiver": "Vikram Patel",
+    "time": "2026-04-05 07:15",
+    "duration": "8:32",
+    "towerId": "T-1042",
+    "lat": 28.5855,
+    "lng": 77.31,
+    "type": "outgoing"
+  },
+  {
+    "id": 2,
+    "caller": "Rajesh Kumar",
+    "receiver": "Mohammad Ali",
+    "time": "2026-04-05 09:10",
+    "duration": "2:14",
+    "towerId": "T-1045",
+    "lat": 28.6315,
+    "lng": 77.2167,
+    "type": "outgoing"
+  },
+  {
+    "id": 3,
+    "caller": "Vikram Patel",
+    "receiver": "Rajesh Kumar",
+    "time": "2026-04-05 10:30",
+    "duration": "5:45",
+    "towerId": "T-1048",
+    "lat": 28.6562,
+    "lng": 77.2321,
+    "type": "incoming"
+  },
+  {
+    "id": 4,
+    "caller": "Mohammad Ali",
+    "receiver": "Vikram Patel",
+    "time": "2026-04-05 10:35",
+    "duration": "3:20",
+    "towerId": "T-1048",
+    "lat": 28.6562,
+    "lng": 77.2321,
+    "type": "outgoing"
+  },
+  {
+    "id": 5,
+    "caller": "Vikram Patel",
+    "receiver": "Deepak Verma",
+    "time": "2026-04-05 12:00",
+    "duration": "5:18",
+    "towerId": "T-1050",
+    "lat": 28.6229,
+    "lng": 77.2388,
+    "type": "outgoing"
+  },
+  {
+    "id": 6,
+    "caller": "Rajesh Kumar",
+    "receiver": "Amit Sharma",
+    "time": "2026-04-05 14:30",
+    "duration": "4:05",
+    "towerId": "T-1042",
+    "lat": 28.5855,
+    "lng": 77.31,
+    "type": "outgoing"
+  },
+  {
+    "id": 7,
+    "caller": "Rajesh Kumar",
+    "receiver": "Vikram Patel",
+    "time": "2026-04-05 16:00",
+    "duration": "6:12",
+    "towerId": "T-1042",
+    "lat": 28.5855,
+    "lng": 77.31,
+    "type": "outgoing"
+  },
+  {
+    "id": 8,
+    "caller": "Mohammad Ali",
+    "receiver": "Rajesh Kumar",
+    "time": "2026-04-05 18:30",
+    "duration": "9:45",
+    "towerId": "T-1055",
+    "lat": 28.6507,
+    "lng": 77.2334,
+    "type": "incoming"
+  },
+  {
+    "id": 9,
+    "caller": "Deepak Verma",
+    "receiver": "Rajesh Kumar",
+    "time": "2026-04-06 08:00",
+    "duration": "3:30",
+    "towerId": "T-1060",
+    "lat": 28.6353,
+    "lng": 77.249,
+    "type": "incoming"
+  },
+  {
+    "id": 10,
+    "caller": "Rajesh Kumar",
+    "receiver": "Mohammad Ali",
+    "time": "2026-04-06 09:45",
+    "duration": "7:15",
+    "towerId": "T-1042",
+    "lat": 28.5855,
+    "lng": 77.31,
+    "type": "outgoing"
+  },
+  {
+    "id": 11,
+    "caller": "Vikram Patel",
+    "receiver": "Mohammad Ali",
+    "time": "2026-04-06 11:00",
+    "duration": "4:50",
+    "towerId": "T-1065",
+    "lat": 28.6289,
+    "lng": 77.2195,
+    "type": "outgoing"
+  },
+  {
+    "id": 12,
+    "caller": "Rajesh Kumar",
+    "receiver": "Vikram Patel",
+    "time": "2026-04-06 13:15",
+    "duration": "11:22",
+    "towerId": "T-1042",
+    "lat": 28.5855,
+    "lng": 77.31,
+    "type": "outgoing"
+  }
+]

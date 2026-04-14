@@ -1,0 +1,9 @@
+id,type,title,description,confidence,severity,suspects
+I001,connection,Strong Connection Detected,"Rajesh Kumar and Vikram Patel show 45 calls in 30 days with average duration of 6 minutes. This frequency is 8x above normal contact patterns.",95,high,"Rajesh Kumar|Vikram Patel"
+I002,movement,Coordinated Movement Pattern,"Three suspects converged at Chandni Chowk within 30 minutes on April 5th. CDR data shows they arrived from different directions, suggesting a planned meeting.",88,high,"Rajesh Kumar|Vikram Patel|Mohammad Ali"
+I003,financial,Suspicious Financial Activity,"Large cash deposits (Rs 25,50,000 total) across 3 accounts in 2 weeks. Pattern consistent with layering phase of money laundering.",82,high,"Rajesh Kumar|Deepak Verma"
+I004,communication,Coded Language Detected,"Analysis of WhatsApp chats and call transcripts reveals consistent use of coded terms: package (8 occurrences), delivery (5), meeting (12).",76,medium,"Rajesh Kumar|Amit Sharma"
+I005,location,Possible Meeting Point Identified,"Sector 15, Noida warehouse visited by Rajesh Kumar 12 times in past month. Evening visits (6-10 PM) correlate with outgoing calls to Vikram Patel.",90,high,"Rajesh Kumar"
+I006,pattern,Operational Pattern Detected,"A recurring pattern emerges: Call -> Meeting -> Financial transaction. This cycle has repeated 4 times in the past 3 weeks.",85,high,"Rajesh Kumar|Vikram Patel|Deepak Verma"
+I007,anomaly,Sudden Behavior Change,"Mohammad Ali switched from using single SIM to dual-SIM on March 20th. Second number shows encrypted messaging app usage.",71,medium,"Mohammad Ali"
+I008,network,Network Expansion Alert,"Two new contacts added to the suspect network in the past week. Priya Singh and Neha Gupta show peripheral connections that may indicate network growth.",63,low,"Priya Singh|Neha Gupta"
