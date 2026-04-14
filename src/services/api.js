@@ -1,5 +1,4 @@
-const API_BASE = "https://evidencex-backend.onrender.com/api"; // PRODUCTION
-console.log("API CONNECTED TO PRODUCTION");
+const API_BASE = "/api";
 
 // ✅ safer token parsing
 const getToken = () => {

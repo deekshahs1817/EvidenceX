@@ -14,15 +14,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || 'evidencex_secret_key_2026';
 
-// ✅ FIXED CORS (IMPORTANT)
 app.use(cors({
-  origin: [
-    'https://deekshahs1817.github.io',
-    'https://deekshahs1817.github.io/',
-    'https://deekshahs1817.github.io/EvidenceX',
-    'https://deekshahs1817.github.io/EvidenceX/',
-    'http://localhost:5173',
-  ],
+  origin: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']

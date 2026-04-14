@@ -5,10 +5,11 @@
   "type": "module",
   "homepage": "https://Kushal639.github.io/EvidenceX",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5000 --host 0.0.0.0",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "start:server": "node server/index.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

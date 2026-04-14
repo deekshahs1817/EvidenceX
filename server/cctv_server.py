@@ -331,6 +331,6 @@ if __name__ == "__main__":
     print("=" * 60)
     print("  EvidenceX CCTV Detection Server")
     print("  YOLOv8 + OpenCV Video Analysis")
-    print("  Running on http://localhost:5001")
+    print("  Running on http://localhost:3000")
     print("=" * 60)
-    app.run(host="0.0.0.0", port=5001, debug=False)
+    app.run(host="0.0.0.0", port=3000, debug=False)

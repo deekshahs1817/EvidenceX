@@ -4,13 +4,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 
-  // ✅ IMPORTANT for GitHub Pages
-  base: "/EvidenceX/",
+  base: "/",
 
   server: {
+    port: 5000,
+    host: '0.0.0.0',
+    allowedHosts: true,
     proxy: {
       '/api/cctv': {
-        target: 'http://localhost:5001',
+        target: 'http://localhost:3000',
         changeOrigin: true,
       },
       '/api': {
