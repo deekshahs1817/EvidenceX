@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 // deploy-sync: fixed API_URL and endpoints
 
 const AuthContext = createContext(null);
-const API_URL = '/api';
+const API_URL = 'https://evidencex.onrender.com/api';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

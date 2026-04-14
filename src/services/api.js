@@ -1,4 +1,4 @@
-const API_BASE = "/api";
+const API_BASE = 'https://evidencex.onrender.com/api';
 
 // ✅ safer token parsing
 const getToken = () => {
