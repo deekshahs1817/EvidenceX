@@ -49,9 +49,9 @@ const writeData = (file, data) => {
 if (!fs.existsSync(path.join(dataDir, 'users.json'))) {
   const salt = bcrypt.genSaltSync(10);
   writeData('users.json', [
-    { id: 'U001', email: '[admin@evidencex.com](mailto:admin@evidencex.com)', password: bcrypt.hashSync('admin123', salt), name: 'Inspector Arjun Mehta', role: 'Senior Inspector', badge: 'IPS-4521' },
-    { id: 'U002', email: '[officer@evidencex.com](mailto:officer@evidencex.com)', password: bcrypt.hashSync('officer123', salt), name: 'Sub-Inspector Priya Rao', role: 'Sub-Inspector', badge: 'SI-7834' },
-    { id: 'U003', email: '[demo@evidencex.com](mailto:demo@evidencex.com)', password: bcrypt.hashSync('demo', salt), name: 'Demo User', role: 'Analyst', badge: 'AN-0001' }
+    { id: 'U001', email: 'admin@evidencex.com', password: bcrypt.hashSync('admin123', salt), name: 'Inspector Arjun Mehta', role: 'Senior Inspector', badge: 'IPS-4521' },
+    { id: 'U002', email: 'officer@evidencex.com', password: bcrypt.hashSync('officer123', salt), name: 'Sub-Inspector Priya Rao', role: 'Sub-Inspector', badge: 'SI-7834' },
+    { id: 'U003', email: 'demo@evidencex.com', password: bcrypt.hashSync('demo', salt), name: 'Demo User', role: 'Analyst', badge: 'AN-0001' }
   ]);
 }
 
@@ -228,6 +228,15 @@ function simulateAnalysis(file) {
   };
 }
 
-app.listen(PORT, () => {
+// Serve built React frontend in production
+const distDir = path.join(__dirname, '../dist');
+if (fs.existsSync(distDir)) {
+  app.use(express.static(distDir));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distDir, 'index.html'));
+  });
+}
+
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
