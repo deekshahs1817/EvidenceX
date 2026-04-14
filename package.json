@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Kushal639.github.io/EvidenceX",
+  "homepage": "https://deekshahs1817.github.io/EvidenceX",
   "scripts": {
     "dev": "vite --port 5000 --host 0.0.0.0",
     "build": "vite build",
